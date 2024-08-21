@@ -16,7 +16,7 @@ sample_name = ['Water', 'CNF0.05wt%', '0.1wt%', '0.2wt%', '0.3wt%', '0.4wt%', 'P
 marker_list = ['o', 'o', 'o', 'o', 'o', 'o', 'x']
 
 # CSVファイルの読み込み
-data = np.loadtxt('taper4.csv', delimiter=',', encoding='utf-8_sig')
+data = np.loadtxt('2ul_data.csv', delimiter=',', encoding='utf-8_sig')
 
 # 行数取得
 row_numbers = len(data)
@@ -74,7 +74,7 @@ for i in range(row_numbers - 1):
     # print(f'{a[0]=}')
     # フィッティングされたパラメータを取得
     plt.plot(new_x, new_y,
-             label=f'fit: y =  {a[0]:.2f} * (1 - sin ($\phi$ + $\Theta$)',
+             label=f'fit: y =  {a[0]:.2f} * (1 - sin ($\phi$ + $\Theta$))',
              lw=1,
              color=color_list[i],
              clip_on=False,
