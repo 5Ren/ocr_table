@@ -16,7 +16,7 @@ sample_name = ['Water', 'CNF0.05wt%', '0.1wt%', '0.2wt%', '0.3wt%', '0.4wt%', 'P
 marker_list = ['o', 'o', 'o', 'o', 'o', 'o', 'x']
 
 # CSVファイルの読み込み
-data = np.loadtxt('f1f2.csv', delimiter=',', encoding='utf-8_sig')
+data = np.loadtxt('../240823_f2f1_data/f1f2.csv', delimiter=',', encoding='utf-8_sig')
 
 # 行数取得
 row_numbers = len(data)

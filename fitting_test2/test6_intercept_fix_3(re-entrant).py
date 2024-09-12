@@ -16,7 +16,7 @@ sample_name = ['Water', 'CNF0.05wt%', '0.1wt%', '0.2wt%', '0.3wt%', '0.4wt%', 'P
 marker_list = ['o', 'o', 'o', 'o', 'o', 'o', 'x']
 
 # CSVファイルの読み込み
-data = np.loadtxt('2ul_data.csv', delimiter=',', encoding='utf-8_sig')
+data = np.loadtxt('240813_Taper_data/10uL_Tdata_f9.csv', delimiter=',', encoding='utf-8_sig')
 
 # 行数取得
 row_numbers = len(data)
@@ -32,8 +32,6 @@ for i in range(row_numbers - 1):
 
     # 新しいx軸の範囲を作成
     new_x = np.linspace(0, 180, 100)  # 100個の等間隔なx値を生成
-
-    intercept_y = 1.7665
 
     def nonlinear_fit(x, a):
         # return -a ** -x + y[-1] + 1

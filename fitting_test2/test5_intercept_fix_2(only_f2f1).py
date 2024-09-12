@@ -17,7 +17,7 @@ surface_tension = [72, 70.9, 70.1, 67.2, 66.5, 54.5, 53.6]
 marker_list = ['o', 'o', 'o', 'o', 'o', 'o', 'x']
 
 # CSVファイルの読み込み
-data = np.loadtxt('f1f2.csv', delimiter=',', encoding='utf-8_sig')
+data = np.loadtxt('240823_f2f1_data/f9_10uL.csv', delimiter=',', encoding='utf-8_sig')
 
 # 行数取得
 row_numbers = len(data)
